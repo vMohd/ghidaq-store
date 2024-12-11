@@ -11,6 +11,7 @@ import NotFound from './components/NotFound';
 import SalesPage from './components/SalesPage';
 import CartPage from './components/CartPage';
 import InvoicePage from './components/InvoicePage';
+import ScrollToTop from './features/ScrollToTop';
 
 
 import './App.css';
@@ -51,6 +52,7 @@ function App() {
   return (
     <CartProvider>
       <Router>
+      <ScrollToTop />
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/about" element={<TheAbout />} />
